@@ -48,6 +48,8 @@
             width: 100%;
         }
     </style>
+
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 </head>
 <body>
     <div class="header">
@@ -55,20 +57,15 @@
     </div>
 
     <div class="product">
-        <h2>Название продукта</h2>
-        <img src="url_изображения_продукта" alt="Изображение продукта">
-        <p>Описание продукта...</p>
-        <button class="buy-button">Купить за 00.00₽</button>
+       <stripe-pricing-table pricing-table-id="prctbl_1OGHFSCJTUBfsNHcoYShE5TF"
+publishable-key="pk_test_51OGGCCCJTUBfsNHcOD9py2QUOHYrD5HONjcuIOIIBt45Kh0ZUNJPKSGTAYyJTrfgNVoWXbO1oe1bXkackvJh4dHR00nIBnZo9e">
+</stripe-pricing-table>
     </div>
 
     <div class="footer">
         <p>&copy; 2023 Ваш Интернет-Магазин</p>
     </div>
 
-    <!-- Stripe JS library -->
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        // Добавьте здесь код JavaScript для работы с Stripe
-    </script>
+   
 </body>
 </html>
